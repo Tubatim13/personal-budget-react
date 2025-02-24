@@ -1,4 +1,5 @@
 import React from 'react';
+import BudgetChart from "../components/BudgetChart";
 
 function HomePage() {
   return (
@@ -41,12 +42,7 @@ function HomePage() {
             <article>
                 <h2>Charts</h2>
                 <div className="chart-container">
-                    <div className="chart-box">
-                        <canvas id="myChart" width="400" height="400" aria-label="Budget distribution pie chart" role="img"></canvas>
-                    </div>
-                    <div className="chart-box">
-                        <div id="d3Chart"></div>
-                    </div>
+                <BudgetChart /> {'/src/components/BudgetChart.js'}
                 </div>
             </article>
 

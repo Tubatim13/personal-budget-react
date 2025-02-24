@@ -1,0 +1,124 @@
+// Normalize CSS (remains unchanged)
+@import "~normalize.css"; 
+
+// Global Styles
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-family: Tahoma, Arial;
+}
+
+// Navigation
+nav {
+  width: 100%;
+  background-color: #4d5791;
+  height: 44px;
+  padding: 0 40px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        padding: 0 20px;
+        line-height: 44px;
+        font-size: 1.4em;
+        text-decoration: none;
+        color: #fff;
+        margin: 0;
+
+        &:hover {
+          background-color: white;
+          color: #4d5791;
+        }
+      }
+    }
+  }
+}
+
+// Hero Section
+.hero {
+  height: 350px;
+  background-color: #b4c6f0;
+  background-image: url("./assets/bg.png");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 40px;
+
+  h1 {
+    color: #fff;
+    font-size: 4.2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #4d5791;
+    text-align: center;
+  }
+}
+
+// Main Content
+main {
+  padding: 40px;
+  width: 100%;
+}
+
+// Page Area
+.page-area {
+  max-width: 768px;
+  display: inline-block;
+}
+
+// Footer
+footer {
+  height: 50px;
+  background-color: #b4c6f0;
+  padding: 40px;
+}
+
+// Accessibility
+.skip {
+  display: block;
+  line-height: 44px;
+  padding: 0 20px;
+  margin-top: -44px;
+
+  &:focus {
+    margin-top: 0;
+  }
+}
+
+// Chart Layout
+.chart-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+.chart-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+}
+
+// Responsive Design
+@media (max-width: 800px) {
+  .chart-row {
+    flex-wrap: wrap;
+  }
+}
